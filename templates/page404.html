@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ super() }}
+
+<div class="row">
+  <div class="col-lg-2">
+    
+  </div>
+  <div class="col-lg-4">
+    <img src="{{ url_for('static', filename='img/404.jpeg')}}" width="500" height="600">
+  </div>
+  <div class="col-lg-6">
+     <h1>вернуться на <a href="/">главную</a> страницу.</h1>
+  </div>
+
+</div>
+
+
+{% endblock %}
